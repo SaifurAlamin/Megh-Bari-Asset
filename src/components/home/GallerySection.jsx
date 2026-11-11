@@ -32,6 +32,11 @@ const GallerySection = () => {
             labelBn: 'সব'
         },
         {
+            id: 'expo',
+            label: 'Expo',
+            labelBn: 'মেলা'
+        },
+        {
             id: 'office',
             label: 'Office',
             labelBn: 'অফিস'
@@ -124,8 +129,8 @@ const GallerySection = () => {
                             key={category.id}
                             onClick={() => setActiveCategory(category.id)}
                             className={`rounded-full px-5 py-2.5 text-sm font-medium transition-all duration-300 ${activeCategory === category.id
-                                    ? 'bg-[#18352d] text-white shadow-md'
-                                    : 'border border-[#e6e0d5] bg-white text-[#5f5549] hover:border-[#18352d] hover:text-[#18352d]'
+                                ? 'bg-[#18352d] text-white shadow-md'
+                                : 'border border-[#e6e0d5] bg-white text-[#5f5549] hover:border-[#18352d] hover:text-[#18352d]'
                                 }`}
                         >
                             {isBangla ? category.labelBn : category.label}

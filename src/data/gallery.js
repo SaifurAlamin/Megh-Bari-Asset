@@ -1,5 +1,38 @@
 
 const galleryItems = [
+    //EXPO
+    {
+        id: 11,
+        type: 'image',
+        category: 'expo',
+        title: 'Real Estate Expo',
+        titleBn: 'আবাসন মেলা',
+        image: '/images/office/ex1.jfif'
+    },
+    {
+        id: 12,
+        type: 'image',
+        category: 'expo',
+        title: 'Real Estate Expo',
+        titleBn: 'আবাসন মেলা',
+        image: '/images/office/ex2.jfif'
+    },
+    {
+        id: 13,
+        type: 'image',
+        category: 'expo',
+        title: 'Real Estate Expo',
+        titleBn: 'আবাসন মেলা',
+        image: '/images/office/ex3.jfif'
+    },
+    {
+        id: 14,
+        type: 'image',
+        category: 'expo',
+        title: 'Real Estate Expo',
+        titleBn: 'আবাসন মেলা',
+        image: '/images/office/ex4.jfif'
+    },
     // Office Photos
     {
         id: 1,
@@ -8,6 +41,24 @@ const galleryItems = [
         title: 'Our Corporate Office',
         titleBn: 'আমাদের কর্পোরেট অফিস',
         image: '/images/projects/hero-cloud.jpg',
+        featured: true
+    },
+    {
+        id: 15,
+        type: 'image',
+        category: 'office',
+        title: 'Megh Bari Visual',
+        titleBn: 'মেঘ বাড়ি',
+        image: '/images/projects/cafe2.jfif',
+        featured: true
+    },
+    {
+        id: 16,
+        type: 'image',
+        category: 'office',
+        title: 'Megh Bari Cafe',
+        titleBn: 'মেঘ বাড়ি ক্যাফে',
+        image: '/images/projects/cafe1.jfif',
         featured: true
     },
     {
@@ -67,13 +118,22 @@ const galleryItems = [
         id: 8,
         type: 'video',
         category: 'videos',
+        title: 'Megh Bari',
+        titleBn: 'মেঘ বাড়ি',
+        thumbnail: '/videos/projects/titleThum.png',
+        video: '/videos/projects/title-video.mp4'
+    },
+    {
+        id: 9,
+        type: 'video',
+        category: 'videos',
         title: 'Megh Bari Project Overview',
         titleBn: 'মেঘ বাড়ি প্রকল্প পরিচিতি',
         thumbnail: '/videos/projects/thum1.png',
         video: '/videos/projects/mb-site-02.mp4'
     },
     {
-        id: 9,
+        id: 10,
         type: 'video',
         category: 'videos',
         title: 'Project Site Visit',

@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -111,27 +110,13 @@ const Navbar = () => {
           <Link
             to="/"
             onClick={handleLinkClick}
-            className="font-display text-2xl font-bold tracking-tight"
+            className="flex items-center"
           >
-            <span className="text-blue-600">MEGH</span>{' '}
-            <span className="text-green-600">BARI.</span>
-
-            <span
-              className={`
-                mt-0.5
-                block
-                text-[8px]
-                font-semibold
-                uppercase
-                tracking-[0.35em]
-                ${showSolidNavbar
-                  ? 'text-slate-500'
-                  : 'text-white/70'
-                }
-              `}
-            >
-              A Place to Grow
-            </span>
+            <img
+              src="/images/office/logo.png"
+              alt="MEGH BARI"
+              className="h-16 w-auto object-contain max-w-[150px]"
+            />
           </Link>
 
           {/* Desktop Navigation */}

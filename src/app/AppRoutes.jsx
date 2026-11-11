@@ -1,16 +1,25 @@
 
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 
+// Public Pages
 import Home from '../pages/Home';
 import ProjectDetails from '../pages/ProjectDetails';
 import InvestmentCalculatorPage from '../pages/InvestmentCalculatorPage';
 import BookSiteVisit from '../pages/BookSiteVisit';
+import PlotMap from '../pages/PlotMap';
+
+// Public Sections
 import AboutSection from '../components/home/AboutSection';
 import ContactSection from '../components/home/ContactSection';
 import ProjectsSection from '../components/home/ProjectsSection';
-import PlotMap from '../pages/PlotMap';
 import GallerySection from '../components/home/GallerySection';
 import ManagementSection from '../components/home/ManagementSection';
+
+// Admin
+import AdminLayout from '../components/admin/layout/AdminLayout';
+import Dashboard from '../pages/admin/Dashboard';
+
+// 404 Page
 const NotFound = () => {
     return (
         <div className="flex min-h-screen flex-col items-center justify-center bg-[#f7f6f1] px-5 text-center">
@@ -23,12 +32,12 @@ const NotFound = () => {
                 Page not found.
             </p>
 
-            <a
-                href="/"
-                className="mt-6 rounded-full bg-[#18352d] px-7 py-3 text-sm font-semibold text-white transition hover:bg-[#b98a52]"
+            <Link
+                to="/"
+                className="mt-6 rounded-full bg-[#18352d] px-7 py-3 text-sm font-semibold text-white transition hover:bg-[#245344]"
             >
                 Back to Home
-            </a>
+            </Link>
 
         </div>
     );
@@ -37,8 +46,15 @@ const NotFound = () => {
 const AppRoutes = () => {
     return (
         <Routes>
+
+            {/* =========================
+                PUBLIC WEBSITE ROUTES
+            ========================= */}
+
             <Route path="/" element={<Home />} />
+
             <Route path="/projects" element={<ProjectsSection />} />
+
             <Route
                 path="/projects/:projectId"
                 element={<ProjectDetails />}
@@ -48,13 +64,37 @@ const AppRoutes = () => {
                 path="/investment-calculator"
                 element={<InvestmentCalculatorPage />}
             />
+
             <Route path="/book-site-visit" element={<BookSiteVisit />} />
+
             <Route path="/about" element={<AboutSection />} />
+
             <Route path="/contact" element={<ContactSection />} />
+
             <Route path="/gallery" element={<GallerySection />} />
+
             <Route path="/management" element={<ManagementSection />} />
+
             <Route path="/plot-map" element={<PlotMap />} />
+
+
+            {/* =========================
+                ADMIN PANEL ROUTES
+            ========================= */}
+
+            <Route path="/admin" element={<AdminLayout />}>
+
+                <Route path="dashboard" element={<Dashboard />} />
+
+            </Route>
+
+
+            {/* =========================
+                404
+            ========================= */}
+
             <Route path="*" element={<NotFound />} />
+
         </Routes>
     );
 };

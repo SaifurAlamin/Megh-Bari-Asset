@@ -32,10 +32,13 @@ const Footer = () => {
 
             <Link
               to="/"
-              className="font-display text-3xl font-bold"
+              className="flex items-center"
             >
-              <span className="text-blue-600">MEGH</span>{' '}
-              <span className="text-green-600">BARI.</span>
+              <img
+                src="/images/office/logo.png"
+                alt="MEGH BARI"
+                className="h-16 w-auto object-contain max-w-[150px]"
+              />
             </Link>
 
             <p className="
