@@ -5,7 +5,7 @@ A modern, responsive and bilingual real estate website for **Megh Bari Asset Lim
 
 ## Live Website
 
-https://megh-bari-asset.netlify.app/
+Visit Megh Bari
 
 ## About the Project
 
