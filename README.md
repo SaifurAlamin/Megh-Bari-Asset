@@ -1,9 +1,9 @@
 
-# Megh Bari – Official Website
+🏡 Megh Bari — Website Assets
 
-A modern, responsive and bilingual real estate website for **Megh Bari Asset Limited**, designed to showcase residential projects, provide project information and help visitors explore investment options and schedule site visits.
+A collection of website assets and media resources for Megh Bari, a real estate development company in Bangladesh.
 
-## Live Website
+🌐 Live Website
 
 Visit Megh Bari
 
